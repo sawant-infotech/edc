@@ -37,6 +37,15 @@
 ////////   //     //    //////////////   //     //  //     //      //
 
 */
+.underline::after {
+  background-color: #ed8b00;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 1px 0 0;
+  width: 50px;
+}
+
 #navbar {
   z-index: 9999;
   width: 100%;
