@@ -250,7 +250,9 @@
             }
         </script>
     </div>
-    <p class="text-center fw-bolder fs-1" style="margin-top: 100px;">Excel Data Convert (EDC) For Pharma</p>
+    <div class="d-flex justify-content-center fw-bolder fs-1" style="margin-top: 100px;">
+        <p class="underline">Excel Data Convert (EDC) For Pharma</p>
+    </div>
     <div class="container-fluid">
         <div class="row mt-3">
             <div class="col col-md-6 col-sm-12 d-flex justify-content-center align-content-center ">
@@ -271,7 +273,8 @@
 
         <div class="row mt-3">
             <div class="col col-md-6 col-sm-12 d-flex justify-content-center align-content-center ">
-                <a href="https://sawant-infotech.github.io/tool/" class="text-center text-dark text-decoration-none m-0 p-0">
+                <a href="https://sawant-infotech.github.io/tool/"
+                    class="text-center text-dark text-decoration-none m-0 p-0">
                     <img src="settings.png" alt="version1.png" class="img-fluid" style="width: 50px;">
                     <p class="m-0 fw-bold">Open Tools</p>
                     <p>Click Here...</p>
@@ -286,6 +289,90 @@
             </div>
         </div>
     </div>
+    <!-- Get Licences  -->
+    <hr id="buy-license-hr">
+    <div class="container border">
+        <div class="container-fluid my-5 fw-bold">
+            <h1 style="font-family: Open Sans,sans-serif;" class="fs-2 underline">Get Trial Key or License</h1>
+            <div class="container-fluid bg-dark bg-opacity-10" style="border-radius: 5px;">
+                <div class="row fw-normal">
+                    <div class="col-lg-8 py-2">
+                        <!-- buy-license -->
+                        <div class="row g-3">
+                            <form class="row g-3 needs-validation was-validated" name="buy-license"
+                                id="buy-license-form-id" method="POST">
+                                <div class="col-md-4">
+                                    <label for="inputNameNeed" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="" name="Client Name"
+                                        placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputEmailNeed" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="" name="Client Email"
+                                        placeholder="example@demo.com" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputMobNeed" class="form-label">Phone</label>
+                                    <input type="text" class="form-control" id="" name="Client Phone"
+                                        placeholder="Phone" required>
+                                </div>
+                                <!-- hidden data -->
+                                <div class="col-md-6 visually-hidden">
+                                    <label for="inputEmailNeed" class="form-label">IP Address</label>
+                                    <input type="text" class="form-control" id="ip-buy-license" name="Client IP"
+                                        placeholder="" tabindex="-1">
+                                </div>
+                                <div class="col-md-6 visually-hidden">
+                                    <label for="inputMobNeed" class="form-label">Date Time</label>
+                                    <input type="text" class="form-control" id="dateTime-buy-license"
+                                        name="Client Submit Date Time" placeholder="" tabindex="-1">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmailNeed" class="form-label">Business</label>
+                                    <input type="text" class="form-control" id="business" name="Client Business"
+                                        placeholder="" tabindex="" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputMobNeed" class="form-label">Business Name</label>
+                                    <input type="text" class="form-control" id="business-name"
+                                        name="Client Business Name" placeholder="" tabindex="" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputMobNeed" class="form-label">Business Address</label>
+                                    <input type="text" class="form-control" id="business-address"
+                                        name="Client Business Address" placeholder="" tabindex="" required>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit"
+                                        class="btn btn-primary d-flex justify-content-center align-items-center"
+                                        onclick="getDateTime('dateTime-buy-license'), getIp('ip-buy-license')">
+                                        <div class="spinner-border spinner-border-sm me-2 visually-hidden" role="status"
+                                            id="buy-license-submit-btn-spinner"></div>Submit
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 py-2 ">
+                        <h4>Our contact details</h4>
+                        <a class="navbar-brand text-center w-100 fs-6 text-primary ms-3" href="tel:8806288365"><i
+                                class="fa-solid fa-phone"></i> +91 88062 88365</a><br>
+                        <a class="navbar-brand text-center w-100 fs-6 text-primary ms-3"
+                            href="mailto:sawant.infotech.14@gmail.com"><i class="fa-regular fa-envelope"></i>
+                            sawant.infotech.14@gmail.com</a><br>
+                        <a class="navbar-brand text-center w-100 fs-6 text-primary ms-3"
+                            href="https://www.google.com/maps/place/Kalamba,+Kolhapur,+Maharashtra/@16.6618299,74.2019795,6684m/data=!3m2!1e3!4b1!4m5!3m4!1s0x3bc0555a167e5cab:0x6c674f5a9d7f26fa!8m2!3d16.6700976!4d74.2260408"
+                            target="_blank"><i class="fa-solid fa-location-dot"></i>
+                            Kalmba, Kolhapur, MH-416007</a><br><br>
+                        <h4>Send Feedback</h4>
+                        <a class="navbar-brand text-center w-100 fs-6 text-primary ms-3" href="" rel="noopener"
+                            data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                            </i> <i class="fa-solid fa-comments"></i> Drop Your Feedback</a><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer -->
     <!-- submit Modal -->
     <div class="modal fade" id="need-a-consulation-project-submit" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -297,7 +384,7 @@
                     <h5 class="modal-title" id="need-a-consulation-project-submitLabel">Sawant Infotech</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="hideSpinner('need-a-consulation-submit-btn-spinner'), 
                     hideSpinner('contact-us-submit-btn-spinner'), 
-                    hideSpinner('feedback-submit-btn-spinner'), hideSpinner('idea-submit-btn-spinner')"></button>
+                    hideSpinner('feedback-submit-btn-spinner'), hideSpinner('idea-submit-btn-spinner'), hideSpinner('buy-license-submit-btn-spinner')"></button>
                 </div>
                 <div class="modal-body">
                     Thanks for contacting With Us..! <br>
@@ -306,7 +393,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" tabindex="1" onclick="hideSpinner('need-a-consulation-submit-btn-spinner'), 
                         hideSpinner('contact-us-submit-btn-spinner'), 
-                        hideSpinner('feedback-submit-btn-spinner'), hideSpinner('idea-submit-btn-spinner')">
+                        hideSpinner('feedback-submit-btn-spinner'), hideSpinner('idea-submit-btn-spinner'), hideSpinner('buy-license-submit-btn-spinner')">
                         Ok</button>
                 </div>
             </div>
@@ -488,14 +575,12 @@
             getIp('ip-contact-us');
             getIp('ip-feedback');
             getIp('ip-idea');
+            getIp('ip-buy-license');
         }
         function hideSpinner(idName) {
             $('#' + idName).addClass("visually-hidden");
             if (idName == 'discuss-your-project-submit-btn-spinner') {
                 clrForm('discuss-your-project-form-id');
-            }
-            else if (idName == 'need-a-consulation-submit-btn-spinner') {
-                clrForm('need-a-consultation-form-id');
             }
             else if (idName == 'contact-us-submit-btn-spinner') {
                 clrForm('contact-us-form-id');
@@ -504,6 +589,9 @@
             }
             else if (idName == 'idea-submit-btn-spinner') {
                 clrForm('idea-form-id');
+            }
+            else if (idName == 'buy-license-submit-btn-spinner') {
+                clrForm('buy-license-form-id');
             }
 
         }
@@ -547,6 +635,18 @@
             e.preventDefault()
             fetch(scriptURL6, { method: 'POST', body: new FormData(form6) })
                 .then(response => ($('#ideaModal').modal('toggle'), $('#need-a-consulation-project-submit').modal("show"))
+                )
+                .catch(error => console.error('Error!', error.message))
+
+        })
+
+        const scriptURL7 = 'https://script.google.com/macros/s/AKfycbyOWjEEsQ3uLndTwsHrTYfMXvZ6yqHAAfzoo2gbP5MRwKeldSo3xPEW3PHXIyyUxaOs6Q/exec'
+        const form7 = document.forms['buy-license']
+        form7.addEventListener('submit', e => {
+            showSpinner('buy-license-submit-btn-spinner')
+            e.preventDefault()
+            fetch(scriptURL7, { method: 'POST', body: new FormData(form7) })
+                .then(response => ($('#need-a-consulation-project-submit').modal("show"))
                 )
                 .catch(error => console.error('Error!', error.message))
 
